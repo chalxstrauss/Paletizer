@@ -133,6 +133,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="publishedCode\msim_proizvodnja\msim_proizvodnja.zip" />
+    <None Include="publishedCode\msim_proizvodnja\Paletizer" />
+    <None Include="publishedCode\msim_proizvodnja\TrgovackaRoba" />
+    <None Include="publishedCode\sirovine\magacin_sirovine.zip" />
+    <None Include="publishedCode\sirovine\Paletizer" />
+    <None Include="publishedCode\sirovine\TrgovackaRoba" />
     <None Include="Web References\rs.esteh\EstorageWebServiceBeanService.wsdl" />
     <None Include="Web References\rs.esteh\itemWsWrapper.datasource">
       <DependentUpon>Reference.map</DependentUpon>
