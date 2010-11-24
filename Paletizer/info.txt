@@ -1,0 +1,7 @@
+
+DonCafe:
+http://192.168.0.4:8080/estorage-estorage/EstorageWebServiceBean?wsdl
+http://192.168.0.28:8080/estorage-estorage/EstorageWebServiceBean?wsdl
+
+lokal:
+http://10.0.0.103:8080/estorage-estorage/EstorageWebServiceBean?wsdl

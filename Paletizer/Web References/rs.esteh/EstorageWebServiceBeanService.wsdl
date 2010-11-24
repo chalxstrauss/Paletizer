@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://ws.service.estorage.esteh.rs/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EstorageWebServiceBeanService" targetNamespace="http://ws.service.estorage.esteh.rs/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://ws.service.estorage.esteh.rs/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="wsUserInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="firstName" type="xs:string" />
+          <xs:element minOccurs="0" name="lastName" type="xs:string" />
+          <xs:element name="options" type="xs:int" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="stockrooms" nillable="true" type="tns:wsStockroom" />
+          <xs:element minOccurs="0" name="username" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsStockroom">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code" type="xs:string" />
+          <xs:element minOccurs="0" name="description" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="userWsWrapper">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="resultStatus" type="tns:wsResult" />
+          <xs:element minOccurs="0" name="user" type="tns:wsUserInfo" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string" />
+          <xs:element minOccurs="0" name="returnCode" type="tns:wsReturnCode" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsPallet">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="barCode" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="itemCode" type="xs:string" />
+          <xs:element minOccurs="0" name="operational" type="xs:boolean" />
+          <xs:element minOccurs="0" name="palletBarCode" type="tns:wsPalletBarCode" />
+          <xs:element minOccurs="0" name="productionDate" type="xs:dateTime" />
+          <xs:element name="quantity" type="xs:int" />
+          <xs:element minOccurs="0" name="stockroom" type="tns:wsStockroom" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsPalletBarCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="barCode" type="xs:string" />
+          <xs:element minOccurs="0" name="engine1" type="xs:string" />
+          <xs:element minOccurs="0" name="engine2" type="xs:string" />
+          <xs:element minOccurs="0" name="inStock" type="xs:boolean" />
+          <xs:element minOccurs="0" name="itemCode" type="xs:string" />
+          <xs:element minOccurs="0" name="itemPackageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="itemPalletCount" type="xs:int" />
+          <xs:element minOccurs="0" name="itemWeight" type="xs:int" />
+          <xs:element name="packageCount" type="xs:int" />
+          <xs:element name="packageWeight" type="xs:int" />
+          <xs:element name="palletWeight" type="xs:int" />
+          <xs:element minOccurs="0" name="prefix" type="xs:string" />
+          <xs:element minOccurs="0" name="productionDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="shiftCode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:int" />
+          <xs:element minOccurs="0" name="workerCode" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="orderWsWrapper">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="orders" nillable="true" type="tns:wsOrder" />
+          <xs:element minOccurs="0" name="resultStatus" type="tns:wsResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsOrder">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code" type="xs:string" />
+          <xs:element minOccurs="0" name="driver" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="items" nillable="true" type="tns:wsOrderItem" />
+          <xs:element minOccurs="0" name="orderDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="partnerCode" type="xs:string" />
+          <xs:element minOccurs="0" name="partnerName" type="xs:string" />
+          <xs:element minOccurs="0" name="regionId" type="xs:string" />
+          <xs:element minOccurs="0" name="regionName" type="xs:string" />
+          <xs:element minOccurs="0" name="stockroom" type="tns:wsStockroom" />
+          <xs:element minOccurs="0" name="type" type="tns:orderType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsOrderItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:long" />
+          <xs:element minOccurs="0" name="itemCode" type="xs:string" />
+          <xs:element minOccurs="0" name="itemId" type="xs:int" />
+          <xs:element minOccurs="0" name="ordIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="orderId" type="xs:long" />
+          <xs:element minOccurs="0" name="quantity" type="xs:int" />
+          <xs:element minOccurs="0" name="selectedQuantity" type="xs:int" />
+          <xs:element minOccurs="0" name="unit" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="palletWsWrapper">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="barCodeInfo" type="tns:wsPalletBarCode" />
+          <xs:element minOccurs="0" name="pallet" type="tns:wsPallet" />
+          <xs:element minOccurs="0" name="resultStatus" type="tns:wsResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="itemWsWrapper">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="items" nillable="true" type="tns:wsItem" />
+          <xs:element minOccurs="0" name="resultStatus" type="tns:wsResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="code" type="xs:string" />
+          <xs:element minOccurs="0" name="comment" type="xs:string" />
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="itemPackageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="itemPalletCount" type="xs:int" />
+          <xs:element minOccurs="0" name="itemType" type="tns:itemType" />
+          <xs:element minOccurs="0" name="itemWeight" type="xs:int" />
+          <xs:element minOccurs="0" name="name" type="xs:string" />
+          <xs:element minOccurs="0" name="packageWeight" type="xs:int" />
+          <xs:element minOccurs="0" name="packsPerPallet" type="xs:int" />
+          <xs:element minOccurs="0" name="print" type="xs:boolean" />
+          <xs:element minOccurs="0" name="unit" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="palletBarCodeWsWrapper">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="palletBarCode" type="tns:wsPalletBarCode" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="pallets" nillable="true" type="tns:wsPallet" />
+          <xs:element minOccurs="0" name="resultStatus" type="tns:wsResult" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:simpleType name="wsReturnCode">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="OK" />
+          <xs:enumeration value="WRONG_USERNAME_PASSWORD" />
+          <xs:enumeration value="INACTIVE_USER" />
+          <xs:enumeration value="OBJECT_NOT_FOUND" />
+          <xs:enumeration value="ERROR" />
+          <xs:enumeration value="DUPLICATE" />
+          <xs:enumeration value="UNKNOWN_ITEM_CODE" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="orderType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="IN" />
+          <xs:enumeration value="OUT" />
+          <xs:enumeration value="PALLET_IN" />
+          <xs:enumeration value="PALLET_FIX" />
+          <xs:enumeration value="INVENTORY" />
+          <xs:enumeration value="TRANSFER" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="itemType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="DCITEM" />
+          <xs:enumeration value="TRITEM" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:complexType name="wsPalletArray" final="#all">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:wsPallet" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="wsPalletBarCodeArray" final="#all">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:wsPalletBarCode" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="EstehWS_acceptOrderResponse">
+    <part name="return" type="tns:orderWsWrapper" />
+  </message>
+  <message name="EstehWS_acceptBarCode">
+    <part name="arg0" type="tns:wsPalletBarCodeArray" />
+  </message>
+  <message name="EstehWS_correctQuantityResponse">
+    <part name="return" type="tns:wsResult" />
+  </message>
+  <message name="EstehWS_getListOfItemsResponse">
+    <part name="return" type="tns:itemWsWrapper" />
+  </message>
+  <message name="EstehWS_removeOrderItemResponse">
+    <part name="return" type="tns:orderWsWrapper" />
+  </message>
+  <message name="EstehWS_getOrderBarCodesResponse">
+    <part name="return" type="tns:palletBarCodeWsWrapper" />
+  </message>
+  <message name="EstehWS_startOrderResponse">
+    <part name="return" type="tns:orderWsWrapper" />
+  </message>
+  <message name="EstehWS_correctQuantity">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="tns:wsPallet" />
+  </message>
+  <message name="EstehWS_addOrderItemResponse">
+    <part name="return" type="tns:orderWsWrapper" />
+  </message>
+  <message name="EstehWS_getMyOrdersResponse">
+    <part name="return" type="tns:orderWsWrapper" />
+  </message>
+  <message name="EstehWS_addOrderItem">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:long" />
+    <part name="arg2" type="tns:wsPallet" />
+  </message>
+  <message name="EstehWS_getPalletResponse">
+    <part name="return" type="tns:palletWsWrapper" />
+  </message>
+  <message name="EstehWS_acceptBarCodeResponse">
+    <part name="return" type="tns:palletBarCodeWsWrapper" />
+  </message>
+  <message name="EstehWS_completedOrderResponse">
+    <part name="return" type="tns:orderWsWrapper" />
+  </message>
+  <message name="EstehWS_acceptOrder">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:long" />
+  </message>
+  <message name="EstehWS_getUserInfoResponse">
+    <part name="return" type="tns:userWsWrapper" />
+  </message>
+  <message name="EstehWS_getItemWithCode">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:string" />
+  </message>
+  <message name="EstehWS_getListOfItems" />
+  <message name="EstehWS_getUserInfo">
+    <part name="arg0" type="tns:wsUserInfo" />
+  </message>
+  <message name="EstehWS_getOrderBarCodes">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:long" />
+  </message>
+  <message name="EstehWS_getPallet">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:string" />
+  </message>
+  <message name="EstehWS_getItemWithCodeResponse">
+    <part name="return" type="tns:itemWsWrapper" />
+  </message>
+  <message name="EstehWS_addPallets">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="tns:wsStockroom" />
+    <part name="arg2" type="tns:wsPalletArray" />
+  </message>
+  <message name="EstehWS_getPalletInfo">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:string" />
+  </message>
+  <message name="EstehWS_startOrder">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="tns:wsStockroom" />
+    <part name="arg2" type="tns:wsStockroom" />
+    <part name="arg3" type="tns:orderType" />
+  </message>
+  <message name="EstehWS_getPalletInfoResponse">
+    <part name="return" type="tns:palletBarCodeWsWrapper" />
+  </message>
+  <message name="EstehWS_removeOrderItem">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:long" />
+    <part name="arg2" type="tns:wsPallet" />
+  </message>
+  <message name="EstehWS_newPalletBarCodeResponse">
+    <part name="return" type="tns:palletBarCodeWsWrapper" />
+  </message>
+  <message name="EstehWS_newPalletBarCode">
+    <part name="arg0" type="tns:wsPalletBarCode" />
+  </message>
+  <message name="EstehWS_getMyOrders">
+    <part name="arg0" type="tns:wsUserInfo" />
+  </message>
+  <message name="EstehWS_completedOrder">
+    <part name="arg0" type="tns:wsUserInfo" />
+    <part name="arg1" type="xsd:long" />
+    <part name="arg2" type="tns:wsPalletArray" />
+  </message>
+  <message name="EstehWS_addPalletsResponse">
+    <part name="return" type="tns:wsResult" />
+  </message>
+  <portType name="EstehWS">
+    <operation name="acceptBarCode" parameterOrder="arg0">
+      <input message="tns:EstehWS_acceptBarCode" />
+      <output message="tns:EstehWS_acceptBarCodeResponse" />
+    </operation>
+    <operation name="acceptOrder" parameterOrder="arg0 arg1">
+      <input message="tns:EstehWS_acceptOrder" />
+      <output message="tns:EstehWS_acceptOrderResponse" />
+    </operation>
+    <operation name="addOrderItem" parameterOrder="arg0 arg1 arg2">
+      <input message="tns:EstehWS_addOrderItem" />
+      <output message="tns:EstehWS_addOrderItemResponse" />
+    </operation>
+    <operation name="addPallets" parameterOrder="arg0 arg1 arg2">
+      <input message="tns:EstehWS_addPallets" />
+      <output message="tns:EstehWS_addPalletsResponse" />
+    </operation>
+    <operation name="completedOrder" parameterOrder="arg0 arg1 arg2">
+      <input message="tns:EstehWS_completedOrder" />
+      <output message="tns:EstehWS_completedOrderResponse" />
+    </operation>
+    <operation name="correctQuantity" parameterOrder="arg0 arg1">
+      <input message="tns:EstehWS_correctQuantity" />
+      <output message="tns:EstehWS_correctQuantityResponse" />
+    </operation>
+    <operation name="getItemWithCode" parameterOrder="arg0 arg1">
+      <input message="tns:EstehWS_getItemWithCode" />
+      <output message="tns:EstehWS_getItemWithCodeResponse" />
+    </operation>
+    <operation name="getListOfItems">
+      <input message="tns:EstehWS_getListOfItems" />
+      <output message="tns:EstehWS_getListOfItemsResponse" />
+    </operation>
+    <operation name="getMyOrders" parameterOrder="arg0">
+      <input message="tns:EstehWS_getMyOrders" />
+      <output message="tns:EstehWS_getMyOrdersResponse" />
+    </operation>
+    <operation name="getOrderBarCodes" parameterOrder="arg0 arg1">
+      <input message="tns:EstehWS_getOrderBarCodes" />
+      <output message="tns:EstehWS_getOrderBarCodesResponse" />
+    </operation>
+    <operation name="getPallet" parameterOrder="arg0 arg1">
+      <input message="tns:EstehWS_getPallet" />
+      <output message="tns:EstehWS_getPalletResponse" />
+    </operation>
+    <operation name="getPalletInfo" parameterOrder="arg0 arg1">
+      <input message="tns:EstehWS_getPalletInfo" />
+      <output message="tns:EstehWS_getPalletInfoResponse" />
+    </operation>
+    <operation name="getUserInfo" parameterOrder="arg0">
+      <input message="tns:EstehWS_getUserInfo" />
+      <output message="tns:EstehWS_getUserInfoResponse" />
+    </operation>
+    <operation name="newPalletBarCode" parameterOrder="arg0">
+      <input message="tns:EstehWS_newPalletBarCode" />
+      <output message="tns:EstehWS_newPalletBarCodeResponse" />
+    </operation>
+    <operation name="removeOrderItem" parameterOrder="arg0 arg1 arg2">
+      <input message="tns:EstehWS_removeOrderItem" />
+      <output message="tns:EstehWS_removeOrderItemResponse" />
+    </operation>
+    <operation name="startOrder" parameterOrder="arg0 arg1 arg2 arg3">
+      <input message="tns:EstehWS_startOrder" />
+      <output message="tns:EstehWS_startOrderResponse" />
+    </operation>
+  </portType>
+  <binding name="EstehWSBinding" type="tns:EstehWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="acceptBarCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="acceptOrder">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="addOrderItem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="addPallets">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="completedOrder">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="correctQuantity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="getItemWithCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="getListOfItems">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="getMyOrders">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="getOrderBarCodes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="getPallet">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="getPalletInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="getUserInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="newPalletBarCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="removeOrderItem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+    <operation name="startOrder">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://ws.service.estorage.esteh.rs/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EstorageWebServiceBeanService">
+    <port name="EstehWSPort" binding="tns:EstehWSBinding">
+      <soap:address location="http://192.168.0.4:8080/estorage-estorage/EstorageWebServiceBean" />
+    </port>
+  </service>
+</definitions>

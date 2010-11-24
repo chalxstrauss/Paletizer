@@ -1,0 +1,219 @@
+﻿<daReport papersize="A4" layout="Landscape">
+<margins left="50" top="50" right="50" bottom="50"></margins>
+<parameters>
+   <parameter name="author" />
+   <parameter name="parameter1" />
+   <parameter name="parameter2" />
+   <parameter name="parameter3" />
+   <parameter name="parameter4" />
+   <parameter name="parameter5" />
+   <parameter name="parameter6" />
+   <parameter name="parameter7" />
+   <parameter name="parameter8" />
+   <parameter name="parameter9" />
+   <parameter name="parameter10" />
+</parameters>
+<content>
+<staticContent>
+ 
+<textField x="47" y="50" width="450" height="41" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">STRAUSS ADRIATIC ДОО</text>
+<font family="Tahoma" size="18"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="659" y="50" width="450" height="41" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">STRAUSS ADRIATIC ДОО</text>
+<font family="Tahoma" size="18"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="660" y="248" width="459" height="85" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Middle">$P{parameter1}</text>
+<font family="Tahoma" size="18"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="47" y="360" width="456" height="47" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter2}</text>
+<font family="Tahoma" size="22"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="659" y="360" width="456" height="47" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter2}</text>
+<font family="Tahoma" size="22"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="47" y="557" width="200" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">Картона на палети</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="47" y="497" width="200" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter10} на палети</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="31" y="102" width="533" height="163" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter6}</text>
+<font family="C39P24DhTt" size="90" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="595" y="102" width="535" height="163" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter6}</text>
+<font family="C39P24DhTt" size="90" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<pictureBox x="567" y="54" width="1" height="718" stretch="false"  horAlignment="None" verAlignment="None" Selectable="True">
+<file>vline.bmp</file>
+<border width="0" color="Black"></border>
+</pictureBox>
+ 
+<textField x="47" y="415" width="457" height="68" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter9}</text>
+<font family="Tahoma" size="28"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="659" y="415" width="457" height="68" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter9}</text>
+<font family="Tahoma" size="28"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="47" y="527" width="200" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter10} у картону</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="48" y="248" width="459" height="85" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Middle">$P{parameter1}</text>
+<font family="Tahoma" size="18"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="252" y="527" width="189" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter7}</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="252" y="557" width="189" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter3}</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="252" y="497" width="189" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter4}</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="659" y="497" width="200" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter10} на палети</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="864" y="497" width="189" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter4}</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="659" y="527" width="200" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter10} у картону</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="864" y="527" width="189" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter7}</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="659" y="557" width="200" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">Картона на палети</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="864" y="557" width="189" height="30" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter3}</text>
+<font family="Tahoma" size="14" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="1" color="Black"></border>
+</textField>
+ 
+<textField x="31" y="608" width="533" height="163" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter6}</text>
+<font family="C39HrP24DhTt" size="90" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="595" y="608" width="535" height="163" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Right" verAlignment="Top">$P{parameter6}</text>
+<font family="C39HrP24DhTt" size="90" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+</staticContent>
+ 
+ 
+</content>
+</daReport>
