@@ -52,6 +52,8 @@
           <xs:element minOccurs="0" name="itemCode" type="xs:string" />
           <xs:element minOccurs="0" name="itemPackageCount" type="xs:int" />
           <xs:element minOccurs="0" name="itemPalletCount" type="xs:int" />
+          <xs:element minOccurs="0" name="itemSku" type="xs:string" />
+          <xs:element minOccurs="0" name="itemSkuPack" type="xs:string" />
           <xs:element minOccurs="0" name="itemWeight" type="xs:int" />
           <xs:element name="packageCount" type="xs:int" />
           <xs:element name="packageWeight" type="xs:int" />
@@ -122,6 +124,8 @@
           <xs:element minOccurs="0" name="packageWeight" type="xs:int" />
           <xs:element minOccurs="0" name="packsPerPallet" type="xs:int" />
           <xs:element minOccurs="0" name="print" type="xs:boolean" />
+          <xs:element minOccurs="0" name="sku" type="xs:string" />
+          <xs:element minOccurs="0" name="skuPack" type="xs:string" />
           <xs:element minOccurs="0" name="unit" type="xs:string" />
         </xs:sequence>
       </xs:complexType>
@@ -497,7 +501,7 @@
   </binding>
   <service name="EstorageWebServiceBeanService">
     <port name="EstehWSPort" binding="tns:EstehWSBinding">
-      <soap:address location="http://DCSQLServer:8080/estorage-estorage/EstorageWebServiceBean" />
+      <soap:address location="http://localhost:8080/estorage-estorage/EstorageWebServiceBean" />
     </port>
   </service>
 </definitions>

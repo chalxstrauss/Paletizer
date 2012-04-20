@@ -29,6 +29,9 @@ namespace Paletizer
         public int SifraReceptaZaPaletu = -1;
         public int ItemPackageCount = 1;
 
+        public string proizvod_barkod = "";
+        public string proizvod_barkod_pak = "";
+
         public int Status = 0;
 
         public void reset()
