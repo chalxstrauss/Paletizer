@@ -20,12 +20,13 @@
    <parameter name="parameter16" />
    <parameter name="parameter17" />
    <parameter name="parameter18" />
+   <parameter name="parameter19" />
 </parameters>
 <content>
 <staticContent>
  
 <textField x="659" y="50" width="450" height="41" horAlignment="None" verAlignment="None" Selectable="True">
-<text horAlignment="Left" verAlignment="Top">STRAUSS ADRIATIC ДОО</text>
+<text horAlignment="Left" verAlignment="Top">STRAUSS ADRIATIC DOO</text>
 <font family="Tahoma" size="18"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
@@ -50,7 +51,7 @@
  
 <textField x="56" y="311" width="503" height="87" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Center" verAlignment="Top">$P{parameter15}</text>
-<font family="Code 128" size="48" ></font>
+<font family="Microsoft Sans Serif" size="48" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
@@ -58,7 +59,7 @@
  
 <textField x="595" y="102" width="535" height="163" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Right" verAlignment="Top">$P{parameter6}</text>
-<font family="C39HrP24DhTt" size="90" ></font>
+<font family="Microsoft Sans Serif" size="90" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
@@ -132,18 +133,18 @@
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="1" color="Black"></border>
 </textField>
-
+ 
 <textField x="582" y="608" width="575" height="163" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Right" verAlignment="Top">$P{parameter11}</text>
-<font family="C39HrP60DhTt" size="92" ></font>
+<font family="Microsoft Sans Serif" size="92" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
 </textField>
  
 <textField x="58" y="63" width="499" height="42" horAlignment="None" verAlignment="None" Selectable="True">
-<text horAlignment="Left" verAlignment="Top">STRAUSS ADRIATIC ДОО
-ЛОГИСТИЧКА ЕТИКЕТА ГОТОВОГ ПРОИЗВОДА</text>
+<text horAlignment="Left" verAlignment="Top">STRAUSS ADRIATIC DOO
+LOGISTIC LABEL – FINISHED GOODS</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
@@ -158,7 +159,7 @@
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="257" y="189" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="281" y="189" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">COUNT:</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -198,7 +199,7 @@
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="66" y="267" width="318" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="66" y="269" width="211" height="32" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter13}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -222,7 +223,7 @@
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="262" y="215" width="102" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="281" y="215" width="102" height="32" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter16}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -232,7 +233,7 @@
  
 <textField x="57" y="456" width="503" height="96" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Center" verAlignment="Top">$P{parameter17}</text>
-<font family="Code 128" size="48" ></font>
+<font family="Microsoft Sans Serif" size="48" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
@@ -240,7 +241,7 @@
  
 <textField x="58" y="610" width="503" height="79" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Center" verAlignment="Top">$P{parameter18}</text>
-<font family="Code 128" size="48" ></font>
+<font family="Microsoft Sans Serif" size="48" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
@@ -265,6 +266,22 @@
 <textField x="58" y="711" width="503" height="46" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Center" verAlignment="Top">$P{parameter18}</text>
 <font family="Tahoma" size="16" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="283" y="249" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">LOT:</text>
+<font family="Tahoma" size="10" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="282" y="270" width="124" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter19}</text>
+<font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
