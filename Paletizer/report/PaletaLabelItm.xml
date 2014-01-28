@@ -21,6 +21,10 @@
    <parameter name="parameter17" />
    <parameter name="parameter18" />
    <parameter name="parameter19" />
+   <parameter name="parameter20" />
+   <parameter name="parameter21" />
+   <parameter name="parameter22" />
+   <parameter name="parameter23" />
 </parameters>
 <content>
 <staticContent>
@@ -49,9 +53,9 @@
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="56" y="311" width="503" height="87" horAlignment="None" verAlignment="None" Selectable="True">
-<text horAlignment="Center" verAlignment="Top">$P{parameter15}</text>
-<font family="Microsoft Sans Serif" size="48" ></font>
+<textField x="54" y="374" width="503" height="100" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Center" verAlignment="Top">$P{parameter22}</text>
+<font family="Code 128" size="60" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
@@ -59,7 +63,7 @@
  
 <textField x="595" y="102" width="535" height="163" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Right" verAlignment="Top">$P{parameter6}</text>
-<font family="Microsoft Sans Serif" size="90" ></font>
+<font family="C39HrP24DhTt" size="90" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
@@ -78,7 +82,7 @@
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="58" y="111" width="503" height="68" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="57" y="121" width="503" height="68" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Middle">$P{parameter1}</text>
 <font family="Tahoma" size="16"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -134,15 +138,7 @@
 <border width="1" color="Black"></border>
 </textField>
  
-<textField x="582" y="608" width="575" height="163" horAlignment="None" verAlignment="None" Selectable="True">
-<text horAlignment="Right" verAlignment="Top">$P{parameter11}</text>
-<font family="Microsoft Sans Serif" size="92" ></font>
-<foregroundColor color="Black"></foregroundColor>
-<backgroundColor color="Transparent"></backgroundColor>
-<border width="0" color="Black"></border>
-</textField>
- 
-<textField x="58" y="63" width="499" height="42" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="60" y="63" width="499" height="49" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">STRAUSS ADRIATIC DOO
 LOGISTIC LABEL – FINISHED GOODS</text>
 <font family="Tahoma" size="10" ></font>
@@ -151,7 +147,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="62" y="190" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="60" y="202" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">CONTENT:</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -159,7 +155,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="281" y="189" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="279" y="202" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">COUNT:</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -167,7 +163,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="407" y="188" width="134" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="424" y="201" width="134" height="23" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">NET WEIGHT (Kg):</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -175,7 +171,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="66" y="215" width="196" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="63" y="225" width="196" height="32" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter12}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -183,7 +179,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="414" y="215" width="102" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="436" y="226" width="102" height="32" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter4}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -191,7 +187,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="65" y="246" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="61" y="310" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">SSCC:</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -199,7 +195,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="66" y="269" width="211" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="62" y="331" width="274" height="28" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter13}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -207,7 +203,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="407" y="249" width="139" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="420" y="259" width="139" height="23" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">PRODUCT CODE:</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -215,7 +211,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="415" y="271" width="132" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="435" y="283" width="126" height="32" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter14}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -223,7 +219,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="281" y="215" width="102" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="275" y="226" width="102" height="32" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter16}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -231,23 +227,23 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="57" y="456" width="503" height="96" horAlignment="None" verAlignment="None" Selectable="True">
-<text horAlignment="Center" verAlignment="Top">$P{parameter17}</text>
-<font family="Microsoft Sans Serif" size="48" ></font>
+<textField x="55" y="504" width="503" height="100" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Center" verAlignment="Top">$P{parameter21}</text>
+<font family="Code 128" size="60" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="58" y="610" width="503" height="79" horAlignment="None" verAlignment="None" Selectable="True">
-<text horAlignment="Center" verAlignment="Top">$P{parameter18}</text>
-<font family="Microsoft Sans Serif" size="48" ></font>
+<textField x="56" y="634" width="503" height="100" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Center" verAlignment="Top">$P{parameter20}</text>
+<font family="Code 128" size="60" ></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="57" y="408" width="503" height="45" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="56" y="469" width="503" height="35" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Center" verAlignment="Top">$P{parameter15}</text>
 <font family="Tahoma" size="16" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -255,7 +251,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="60" y="564" width="503" height="34" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="58" y="599" width="503" height="35" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Center" verAlignment="Top">$P{parameter17}</text>
 <font family="Tahoma" size="16" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -263,7 +259,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="58" y="711" width="503" height="46" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="57" y="729" width="503" height="35" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Center" verAlignment="Top">$P{parameter18}</text>
 <font family="Tahoma" size="16" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -271,7 +267,7 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="283" y="249" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="280" y="258" width="100" height="23" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">LOT:</text>
 <font family="Tahoma" size="10" ></font>
 <foregroundColor color="Black"></foregroundColor>
@@ -279,8 +275,24 @@ LOGISTIC LABEL – FINISHED GOODS</text>
 <border width="0" color="Black"></border>
 </textField>
  
-<textField x="282" y="270" width="124" height="32" horAlignment="None" verAlignment="None" Selectable="True">
+<textField x="274" y="280" width="150" height="34" horAlignment="None" verAlignment="None" Selectable="True">
 <text horAlignment="Left" verAlignment="Top">$P{parameter19}</text>
+<font family="Tahoma" size="12"  style="Bold"></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="61" y="257" width="142" height="23" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">PRODUCTION DATE:</text>
+<font family="Tahoma" size="10" ></font>
+<foregroundColor color="Black"></foregroundColor>
+<backgroundColor color="Transparent"></backgroundColor>
+<border width="0" color="Black"></border>
+</textField>
+ 
+<textField x="62" y="280" width="150" height="31" horAlignment="None" verAlignment="None" Selectable="True">
+<text horAlignment="Left" verAlignment="Top">$P{parameter23}</text>
 <font family="Tahoma" size="12"  style="Bold"></font>
 <foregroundColor color="Black"></foregroundColor>
 <backgroundColor color="Transparent"></backgroundColor>
